@@ -1,7 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portal</title>
+
+<style>
+
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family: Arial, sans-serif;
+  background:#f4f6f8;
+}
+
+/* login panel */
+.box{
+  width:340px;
+  background:white;
+  padding:40px;
+  border-radius:6px;
+  box-shadow:0 8px 28px rgba(0,0,0,0.12);
+}
+
+/* official input style */
+input{
+  width:100%;
+  padding:12px;
+  margin-bottom:18px;
+  border:1px solid #c9ced6;
+  border-radius:4px;
+  font-size:15px;
+  background:#fafafa;
+  transition:all .2s;
+}
+
+input:focus{
+  background:white;
+  border-color:#c40000;
+  outline:none;
+  box-shadow:0 0 0 2px rgba(196,0,0,0.1);
+}
+
+</style>
+
+</head>
+
 <body>
 
 <div class="box">
-<h2>Şişli Afet Portalı</h2>
 
 <input type="text" placeholder="Kullanıcı Adı">
 <input type="password" placeholder="Şifre">
@@ -9,3 +58,4 @@
 </div>
 
 </body>
+</html>
