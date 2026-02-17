@@ -10,38 +10,47 @@ body{
   margin:0;
   height:100vh;
   display:flex;
+  flex-direction:column;
   justify-content:center;
   align-items:center;
   font-family: Arial, sans-serif;
   background:#f4f6f8;
 }
 
-/* login panel */
-.box{
-  width:340px;
-  background:white;
-  padding:40px;
-  border-radius:6px;
-  box-shadow:0 8px 28px rgba(0,0,0,0.12);
+/* HEADER TEXT */
+.header{
+  font-size:26px;
+  font-weight:bold;
+  color:#0054a5;
+  margin-bottom:18px;
 }
 
-/* official input style */
+/* login panel smaller */
+.box{
+  width:260px;
+  background:white;
+  padding:26px;
+  border-radius:6px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.12);
+}
+
+/* smaller official inputs */
 input{
   width:100%;
-  padding:12px;
-  margin-bottom:18px;
+  padding:9px;
+  margin-bottom:14px;
   border:1px solid #c9ced6;
   border-radius:4px;
-  font-size:15px;
+  font-size:13px;
   background:#fafafa;
   transition:all .2s;
 }
 
 input:focus{
   background:white;
-  border-color:#c40000;
+  border-color:#0054a5;
   outline:none;
-  box-shadow:0 0 0 2px rgba(196,0,0,0.1);
+  box-shadow:0 0 0 2px rgba(0,84,165,0.15);
 }
 
 </style>
@@ -50,11 +59,13 @@ input:focus{
 
 <body>
 
-<div class="box">
+<div class="header">
+AFET YÖNETİM PORTALI
+</div>
 
+<div class="box">
 <input type="text" placeholder="Kullanıcı Adı">
 <input type="password" placeholder="Şifre">
-
 </div>
 
 </body>
